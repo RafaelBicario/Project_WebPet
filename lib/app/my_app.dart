@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 // import 'package:flutter_application_1/app/view/contact.dart';
-import 'package:pet_application/app/view/contact.dart';
+import 'package:pet_application/app/view/cadastro.dart';
 import 'package:pet_application/app/view/home_page.dart';
+import 'package:pet_application/app/view/lista.dart';
 
 // import 'view/my_home_page.dart';
 
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         '/': (context) => HomePage(),
-        'contact-form': (context) => Contact()
+        'contact-form': (context) => Cadastro(),
+        'lista': (context) => lista()
       },
     );
   }

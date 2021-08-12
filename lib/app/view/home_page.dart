@@ -6,24 +6,26 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Gerenciamento Pet'),
-          actions: [
-            IconButton(
-                icon: Icon(Icons.add),
-                iconSize: 45,
-                onPressed: () {
-                  Navigator.of(context).pushNamed('contact-form');
-                })
-          ],
-        ),
-        body: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/cat wallpaper.jpg"),
-                fit: BoxFit.cover,
-              ),
-            ),
-            child: null));
+      appBar: AppBar(
+        title: Text('Gerenciamento Atendimentos'),
+        backgroundColor: Colors.grey,
+        actions: [
+          IconButton(
+              icon: Icon(Icons.add),
+              iconSize: 45,
+              onPressed: () {
+                Navigator.of(context).pushNamed('contact-form');
+              })
+        ],
+      ),
+      // body: Container(
+      //     decoration: BoxDecoration(
+      //       image: DecorationImage(
+      //         image: AssetImage("assets/images/cat wallpaper.jpg"),
+      //         fit: BoxFit.cover,
+      //       ),
+      //     ),
+      //     child: null)
+    );
   }
 }
